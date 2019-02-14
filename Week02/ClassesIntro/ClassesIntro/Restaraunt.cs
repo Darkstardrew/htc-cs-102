@@ -7,14 +7,14 @@ using System.Windows;
 
 namespace ClassesIntro
 {
-    public class Dog
+    public class Restaraunt
     {
-        public string Breed;
-        public int Height;
-        public int Age;
         public string Name;
+        public int AvgReview;
+        public string Price;
+        public string Location;
 
-        public void Bark()
+        public void Restaraunt2()
         {
             MessageBox.Show("Bark");
         }
