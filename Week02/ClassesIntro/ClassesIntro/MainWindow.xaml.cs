@@ -20,22 +20,17 @@ namespace ClassesIntro
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
 
-        private void Bark_Button_Click(object sender, RoutedEventArgs e)
+        private void bark_button_click(object sender, RoutedEventArgs e)
         {
-            Dog jordan = new Dog();
+            Dog jordan = new Dog("Sid", 20, "Pug");
             jordan.Bark();
         }
 
-        private void SayName_Button_Click(object sender, RoutedEventArgs e)
+        private void sayname_button_click(object sender, RoutedEventArgs e)
         {
-            Dog jardun = new Dog();
-            jardun.Name = "bob";
-            jardun.SayName();
+            Dog jordan = new Dog("Sid", 20, "Pug");
+            jordan.SayName();
         }
     }
 }

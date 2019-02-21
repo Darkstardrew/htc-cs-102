@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="525">
     <StackPanel Margin="10,10,10,10">
-
+        <TextBlock x:Name="Title" TextWrapping="Wrap" Text="Title:" HorizontalAlignment="Right" Width="497"/>
+        <TextBox x:Name="TitleInput" Height="23" TextWrapping="Wrap" Text="" TextChanged="TitleInput_TextChanged"/>
+        <TextBlock x:Name="ReleaseYear" TextWrapping="Wrap" Text="Release Year:" Margin="0,5,0,0"/>
+        <TextBox x:Name="ReleaseYearInput" Height="23" TextWrapping="Wrap" Text="" TextChanged="ReleaseYearInput_TextChanged"/>
+        <Button x:Name="AddMovie" Content="Add Movie" Click="AddMovie_Click" Margin="0,5" Width="125"/>
+        <Button x:Name ="ShowAllButton" Content="Show All Movies" Margin="0,5" Width="150" Click="ShowAllButton_Click"/>
     </StackPanel>
 </Window>

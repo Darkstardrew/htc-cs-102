@@ -21,9 +21,34 @@ namespace MovieList
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public List<Movie> movieList;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            movieList = new List<Movie>();
+        }
+
+        private void AddMovie_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ReleaseYearInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TitleInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ShowAllButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
