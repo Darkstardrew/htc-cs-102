@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="525">
     <StackPanel Margin="10,10,10,10">
-        <TextBlock x:Name="Title" TextWrapping="Wrap" Text="Title:" HorizontalAlignment="Right" Width="497"/>
+        <TextBlock x:Name="MovieTitle" TextWrapping="Wrap" Text="Title:" Margin="0,5,0,0"/>
         <TextBox x:Name="TitleInput" Height="23" TextWrapping="Wrap" Text="" TextChanged="TitleInput_TextChanged"/>
         <TextBlock x:Name="ReleaseYear" TextWrapping="Wrap" Text="Release Year:" Margin="0,5,0,0"/>
         <TextBox x:Name="ReleaseYearInput" Height="23" TextWrapping="Wrap" Text="" TextChanged="ReleaseYearInput_TextChanged"/>

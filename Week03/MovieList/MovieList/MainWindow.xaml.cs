@@ -33,22 +33,31 @@ namespace MovieList
 
         private void AddMovie_Click(object sender, RoutedEventArgs e)
         {
+            string name = TitleInput.Text;
+            int year = Convert.ToInt32(ReleaseYearInput.Text);
 
+            Movie newMovie = new Movie(name, year);
+
+            movieList.Add(newMovie);
+
+            MessageBox.Show(name);
+            MessageBox.Show(Convert.ToString(year));
         }
 
         private void ReleaseYearInput_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void TitleInput_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void ShowAllButton_Click(object sender, RoutedEventArgs e)
         {
-
+            foreach (Movie movie in movieList)
+            {
+                movie.ShowMovie();
+            }
         }
     }
 }
