@@ -1,5 +1,7 @@
-﻿using System;
+﻿using InhereitenceIntro;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,8 +39,8 @@ namespace InheritanceIntro
             List<Dog> dogs = new List<Dog>();
             
             // Instantiate some dog objects
-            Dog dog1 = new Dog("Muppet", 20, "Rolf");
-            Dog dog2 = new Dog("Golden Retriever", 30, "Air Bud");
+            Dog dog1 = new Dog("Pug Mix", 20, "Sid");
+            Dog dog2 = new Dog("Pug", 18, "Yoda");
 
             // Add the dogs to the list
             dogs.Add(dog1);
@@ -49,6 +51,33 @@ namespace InheritanceIntro
             {
                 d.SayName();
             }
+
+            Duck duck1 = new InhereitenceIntro.Duck(25, " Harry!");
+            Duck duck2 = new InhereitenceIntro.Duck(45, " Henrietta!");
+
+            List<Duck> ducks = new List<Duck>();
+            ducks.Add(duck1);
+            ducks.Add(duck2);
+            
+            foreach (Duck duck in ducks)
+            {
+                duck.SayName();
+            }
+        }
+
+        private void Quack_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Duck duck = new Duck();
+            duck.Quack();
+        }
+
+        private void ImageButton_Click(object sender, RoutedEventArgs e)
+        {
+            Process photoViewer = new Process();
+            //photoViewer.StartInfo.FileName = @"C:\Program Files\Windows Photo Viewer\ImagingDevices.exe";
+            photoViewer.StartInfo.FileName = @"\Microsoft.Windows.Photos_2019.18114.17710.0_x64__8wekyb3d8bbwe";
+            photoViewer.StartInfo.Arguments = @"C:\Users\User1\Pictures\FrogCostume.jpg";
+            photoViewer.Start();
         }
     }
 }

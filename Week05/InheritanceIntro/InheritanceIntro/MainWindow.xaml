@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="700">
     <StackPanel>
-        <Image Source="dog.jpg" Width="700"/>
-        <Button Click="Bark_Button_Click">Bark</Button>
-        <Button Click="SayName_Button_Click">Say Name</Button>
+        <Image Source="duck.jpg" Height="482"/>
+        <Button Click="Bark_Button_Click" Content="Bark"/>
+        <Button Click="Quack_Button_Click" Content="Quack"/>
+        <Button Click="SayName_Button_Click" Content="Say Name"/>
+        <Button Click="ImageButton_Click" Height="18">Ribbit</Button>
     </StackPanel>
 </Window>
