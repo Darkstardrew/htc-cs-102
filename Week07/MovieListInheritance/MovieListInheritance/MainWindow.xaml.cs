@@ -57,5 +57,26 @@ namespace MovieList
                 selectedMovie.ShowDetails();
             }
         }
+
+        private void AddAnimatedButton_Click(object sender, RoutedEventArgs e)
+        {
+            int? year = null;
+            try 
+            {
+                year = Convert.ToInt32(releaseYearInput.Text);
+            }
+            catch
+            {
+
+            }
+            Movie animatedMovieToAdd = new AnimatedMovie(titleInput.Text, year, animationStudioInput.Text, animationTypeInput.Text);
+
+            MovieList.Add(animatedMovieToAdd);
+
+            titleInput.Clear();
+            releaseYearInput.Clear();
+            animationStudioInput.Clear();
+            animationTypeInput.Clear();
+        }
     }
 }

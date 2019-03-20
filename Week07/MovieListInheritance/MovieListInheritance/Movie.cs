@@ -10,13 +10,14 @@ namespace MovieList
             set;
         }
 
-        public int ReleaseYear
+        public int? ReleaseYear
         {
             get;
             set;
         }
+        
 
-        public void ShowDetails()
+        public virtual void ShowDetails()
         {
             string infoString = "Title: " + this.Title;
             infoString += "\nRelease Year: " + this.ReleaseYear;
@@ -25,7 +26,7 @@ namespace MovieList
 
         public Movie() { }
 
-        public Movie(string myTitle, int myReleaseYear)
+        public Movie(string myTitle, int? myReleaseYear)
         {
             this.Title = myTitle;
             this.ReleaseYear = myReleaseYear;
